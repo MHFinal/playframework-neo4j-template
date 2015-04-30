@@ -3,6 +3,5 @@ FROM ubuntu
 MAINTAINER Joel Mabbott
 
 RUN apt-get update
-RUN echo "Hello World"
-
-CMD ["/bin/bash"]
+RUN apt-get install -y git
+RUN git clone git@github.com:MHFinal/playframework-neo4j-template.git
